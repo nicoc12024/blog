@@ -1,6 +1,6 @@
 ## Fullstack Blog App
 
-A blogging platform built with React, TypeScript, and Node.js. This application allows users to create an account, write blog posts, edit or delete their own posts, and view posts from other users. It features infinite scrolling, category filtering, and JWT authentication. Non users can use the platform too but they cannot create posts or edit/delete posts.
+A blogging platform built with React, TypeScript, and Node.js. This application allows users to create an account, write blog posts, edit or delete their own posts, and view posts from other users. It features infinite scrolling, category filtering, and JWT authentication. Non users can use the platform, but they cannot create posts or edit/delete posts.
 
 ## Quick Overview
 
