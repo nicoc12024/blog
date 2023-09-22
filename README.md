@@ -14,12 +14,11 @@ A blogging platform built with React, TypeScript, and Node.js. This application 
 
 ## Demo
 
-![Demo](./client/public/demo/1.png)
-![Demo](./client/public/demo/6.png)
-![Demo](./client/public/demo/2.png)
-![Demo](./client/public/demo/3.png)
-![Demo](./client/public/demo/4.png)
-![Demo](./client/public/demo/5.png)
+<img src="./client/public/demo/1.png" width="300">
+<img src="./client/public/demo/6.png" width="300">
+<img src="./client/public/demo/3.png" width="300">
+<img src="./client/public/demo/4.png" width="300">
+<img src="./client/public/demo/5.png" width="300">
 
 ## Technologies used
 
