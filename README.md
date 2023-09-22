@@ -15,6 +15,7 @@ A blogging platform built with React, TypeScript, and Node.js. This application 
 ## Demo
 
 ![Demo](./client/public/demo/1.png)
+![Demo](./client/public/demo/6.png)
 ![Demo](./client/public/demo/2.png)
 ![Demo](./client/public/demo/3.png)
 ![Demo](./client/public/demo/4.png)
