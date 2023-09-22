@@ -269,6 +269,7 @@ export const Navbar = () => {
                             key={action}
                             onClick={() => {
                               if (action === "Delete Account") {
+                                handleCloseNavMenu();
                                 handleDeleteAccount();
                               } else if (action === "Logout") {
                                 handleLogout();

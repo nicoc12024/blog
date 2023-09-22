@@ -49,9 +49,11 @@ export const useWriteForm = () => {
     if (e.target.value.length > 70) {
       setInputBorderColor("input-title-red");
       setIsSubmitDisabled(true);
+      setError("Title should be 70 characters or less.");
     } else {
       setInputBorderColor("input");
       setIsSubmitDisabled(false);
+      setError("");
     }
   };
 

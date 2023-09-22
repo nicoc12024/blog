@@ -6,6 +6,7 @@ import DOMPurify from "dompurify";
 import { useWriteForm } from "../Write/useWriteForm";
 import UserInformation from "./UserInformation";
 import { useFetchPost } from "./useFetchPost";
+import { useEffect } from "react";
 
 export const SinglePost = () => {
   const authContext = useContext(AuthContext);
@@ -17,6 +18,12 @@ export const SinglePost = () => {
   const post = useFetchPost(postId);
 
   const { handleDelete } = useWriteForm();
+
+  useEffect(() => {
+    if (post) {
+      window.scrollTo(0, 0);
+    }
+  }, [post]);
 
   return (
     <div className="single">
@@ -35,7 +42,7 @@ export const SinglePost = () => {
           }}
         ></p>
       </div>
-      
+
       <AsidePosts cat={post?.cat} currentPostId={parseInt(postId)} />
     </div>
   );

@@ -12,6 +12,15 @@ A blogging platform built with React, TypeScript, and Node.js. This application 
 - Users have the option to delete their accounts.
 - Additional features and unit testing to be implemented soon.
 
+## Demo
+
+![Demo](./client/public/demo/1.png)
+![Demo](./client/public/demo/2.png)
+![Demo](./client/public/demo/3.png)
+![Demo](./client/public/demo/4.png)
+![Demo](./client/public/demo/5.png)
+![Demo](./client/public/demo/6.png)
+
 ## Technologies used
 
 - Backend: Node.js, Express, MySQL, JWT for authentication, cookies for session management

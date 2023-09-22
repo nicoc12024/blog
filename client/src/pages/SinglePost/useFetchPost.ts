@@ -24,6 +24,7 @@ export const useFetchPost = (postId: string) => {
         console.log(err);
       }
     };
+
     fetchData();
   }, [postId]);
 
