@@ -22,7 +22,7 @@ export const Login = () => {
           value={inputs.password}
           onChange={handleChange}
         />
-        <button onClick={handleLogin}>Login</button>
+        <button onClick={handleLogin}>Login Now</button>
         {error && <p>{error}</p>}
         <span>
           Don't you have an account? <Link to="/register">Register</Link>

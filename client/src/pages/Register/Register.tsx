@@ -32,7 +32,7 @@ export const Register = () => {
           onChange={handleChange}
           value={inputs.password}
         />
-        <button onClick={handleRegister}>Register</button>
+        <button onClick={handleRegister}>Register Now</button>
         {error && <p>{error}</p>}
         <span>
           Do you have an account? <Link to="/login">Login</Link>

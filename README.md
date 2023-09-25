@@ -1,6 +1,6 @@
 ## Fullstack Blog App
 
-A blogging platform built with React, TypeScript, and Node.js. This application allows users to create an account, write blog posts, edit or delete their own posts, and view posts from other users. It features infinite scrolling, category filtering, and JWT authentication. Non users can use the platform, but they cannot create posts or edit/delete posts.
+A blogging platform built with React, TypeScript, Node.js and tested with Unit Testing using Jest and RTL. This application allows users to create an account, write blog posts, edit or delete their own posts, and view posts from other users. It features infinite scrolling, category filtering, and JWT authentication. Non users can use the platform, but they cannot create posts or edit/delete posts.
 
 ## Quick Overview
 
@@ -10,7 +10,6 @@ A blogging platform built with React, TypeScript, and Node.js. This application 
 - Filter blog posts by categories.
 - Users can create, edit, and delete their own blog posts.
 - Users have the option to delete their accounts.
-- Additional features and unit testing to be implemented soon.
 
 ## Demo
 
@@ -23,7 +22,7 @@ A blogging platform built with React, TypeScript, and Node.js. This application 
 ## Technologies used
 
 - Backend: Node.js, Express, MySQL, JWT for authentication, cookies for session management
-- Frontend: React, Vite, TypeScript, SCSS and more
+- Frontend: React, Vite, TypeScript, Unit Testing, SCSS and more
 
 ## Key Dependencies
 

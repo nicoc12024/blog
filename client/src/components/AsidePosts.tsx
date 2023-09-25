@@ -14,25 +14,25 @@ type Props = {
 };
 
 export const AsidePosts = ({ cat, currentPostId }: Props) => {
-  const filteredAndShuffledPosts = useAsidePosts(cat, currentPostId);
+  const { filteredAndShuffledPosts, loading } = useAsidePosts(cat, currentPostId);
+  if (loading) return <p>Loading...</p>;
 
   return (
     <div className="menu">
       <h2>Other posts you may like</h2>
-      {filteredAndShuffledPosts?.length === 0 && <p>No posts found! </p>}
-      {filteredAndShuffledPosts?.slice(0, 3).map((post: Post) => (
-        <div className="post" key={post.id}>
-          <Link className="link" to={`/post/${post.id}`}>
-            <img src={`../upload/${post?.img}`} alt="" />
-          </Link>
-          <Link className="link" to={`/post/${post.id}`}>
-            <h3>{post.title}</h3>
-          </Link>
-          <Link className="link" to={`/post/${post.id}`}>
-            <button>Read More</button>
-          </Link>
-        </div>
-      ))}
+      {filteredAndShuffledPosts.length === 0 ? (
+        <p>No posts found! </p>
+      ) : (
+        filteredAndShuffledPosts.map((post: Post) => (
+          <div className="post" key={post.id}>
+            <Link className="link" to={`/post/${post.id}`}>
+              <img src={`../upload/${post.img}`} alt={post.title} />
+              <h3>{post.title}</h3>
+              <button>Read More</button>
+            </Link>
+          </div>
+        ))
+      )}
     </div>
   );
 };
